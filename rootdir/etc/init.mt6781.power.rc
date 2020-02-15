@@ -56,6 +56,12 @@ on property:sys.boot_completed=1
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
 
+    # Disable edge limit control interface
+    write /proc/touchpanel/oplus_tp_limit_enable 0
+
+    # Enable oplus touchpanel direction
+    write /proc/touchpanel/oplus_tp_direction 1
+
     # restore perf. parameters
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "0 0"
     write /proc/perfmgr/boost_ctrl/eas_ctrl/boot_boost "1 0"
