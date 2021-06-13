@@ -110,7 +110,6 @@ on fs
     write /proc/touchpanel/tp_fw_update 0
 
 on late-fs
-    wait_for_prop hwservicemanager.ready "true"
     mount_all --late
 
 on post-fs
