@@ -2,6 +2,9 @@ on fs
     mount_all /vendor/etc/fstab.mt6781 --early
     mount_all /vendor/etc/fstab.mt6781 --late
 
+    # Update touchpanel firmware in case we ship newer firmware in /odm
+    write /proc/touchpanel/tp_fw_update 0
+
 on post-fs
 
     # boot perf. tune
