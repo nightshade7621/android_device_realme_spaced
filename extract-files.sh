@@ -86,6 +86,9 @@ function blob_fixup {
         lib64/libem_support_jni.so)
             "${PATCHELF}" --add-needed "libjni_shim.so" "${2}"
             ;;
+        vendor/lib64/libwifi-hal-mtk.so)
+            "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
+            ;;
     esac
 }
 
