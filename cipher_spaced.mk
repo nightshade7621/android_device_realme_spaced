@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 The CipherOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/spaced/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CipherOS stuff.
+$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_spaced
+# CipherOS specific flags
+# Bootanimation res
+TARGET_BOOT_ANIMATION_RES := 1080
+# Maintainer
+CIPHER_MAINTAINER := HELLINFIX
+# GMS
+CIPHER_GAPPS := true
+
+PRODUCT_NAME := cipher_spaced
 PRODUCT_DEVICE := spaced
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
