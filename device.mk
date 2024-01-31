@@ -288,13 +288,15 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    TetheringConfigOverlay \
-    CarrierConfigOverlay
+    FrameworksResOverlaySpaced \
+    SettingsOverlaySpaced \
+    SystemUIOverlaySpaced \
+    TelephonyOverlaySpaced \
+    WifiResOverlaySpaced \
+    TetheringResOverlaySpaced \
+    CarrierConfigOverlaySpaced \
+    OplusDozeOverlaySpaced
 
 # Permissions
 PRODUCT_COPY_FILES += \
