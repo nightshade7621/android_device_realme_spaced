@@ -348,6 +348,8 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm
 
 # Power
+$(call inherit-product, hardware/oplus/power-libperfmgr/power-libperfmgr.mk)
+
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
@@ -424,6 +426,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
+    hardware/oplus
 
 # Thermal
 PRODUCT_PACKAGES += \
