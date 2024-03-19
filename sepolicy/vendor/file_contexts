@@ -14,9 +14,6 @@
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.spaced                                                u:object_r:hal_light_default_exec:s0
 
-# LiveDisplay
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service-spaced                                        u:object_r:hal_lineage_livedisplay_spaced_exec:s0
-
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-multihal\.spaced                                u:object_r:mtk_hal_sensors_exec:s0
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service                                             u:object_r:mtk_hal_sensors_exec:s0
@@ -51,9 +48,6 @@
 
 # NFC
 /dev/pn553                                                                                                             u:object_r:nfc_device:s0
-
-# Touch
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@[0-9]\.[0-9]-service\.oplus                                      u:object_r:hal_lineage_touch_default_exec:s0
 
 # Perfmgr
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.spaced-libperfmgr                                      u:object_r:hal_power_default_exec:s0
