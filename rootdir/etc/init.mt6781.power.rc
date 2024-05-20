@@ -30,6 +30,9 @@ on init
 
 on property:sys.boot_completed=1
 
+    # ZRAM
+    swapon_all /vendor/etc/fstab.mt6781
+
     # Runtime FS tuning
     # we should adjust the setting upon boot_complete for runtime performance
     write /sys/block/mmcblk0/queue/iostats 1

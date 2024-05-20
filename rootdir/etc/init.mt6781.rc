@@ -109,7 +109,6 @@ on fs
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/direct_swappiness 50
     write /sys/kernel/mm/swap/vma_ra_enabled false
-    swapon_all /vendor/etc/fstab.mt6781
 
 on late-fs
     wait_for_prop hwservicemanager.ready "true"
