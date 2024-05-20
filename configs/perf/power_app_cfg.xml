@@ -511,7 +511,6 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_LOWER" param1="60"></data>
                 <data cmd="PERF_RES_FPS_FSTB_SOFT_FPS_UPPER" param1="60"></data>
                 <data cmd="PERF_RES_FPS_FBT_BHR_OPP" param1="15"></data>
-                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
             </FPS>
         </Activity>
     </Package>
@@ -533,7 +532,6 @@ any software that is unrelated to enhancing end-user experience. -->
             </FPS>
             <FPS value="120">
                 <data cmd="PERF_RES_POWERHAL_TOUCH_BOOST_DEBOOST_WHEN_RENDER" param1="0"></data>
-                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
             </FPS>
         </Activity>
     </Package>
@@ -581,7 +579,6 @@ any software that is unrelated to enhancing end-user experience. -->
         <Activity name="com.idlefish.flutterbridge.flutterboost.IdleFishFlutterActivity">
             <FPS value="120">
                 <data cmd="PERF_RES_CPUFREQ_MIN_CLUSTER_1" param1="1308000"></data>
-                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
             </FPS>
         </Activity>
     </Package>
@@ -607,13 +604,6 @@ any software that is unrelated to enhancing end-user experience. -->
                 <data cmd="PERF_RES_FPS_FBT_BOOST_TA" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_ULTRA_RESCUE" param1="1"></data>
                 <data cmd="PERF_RES_FPS_FBT_RESCUE_PERCENT" param1="100"></data>
-            </FPS>
-        </Activity>
-    </Package>
-    <Package name="com.glodon.drawingexplorer">
-        <Activity name="Common">
-            <FPS value="Common">
-                <data cmd="PERF_RES_SCHED_BOOST" param1="1"></data>
             </FPS>
         </Activity>
     </Package>

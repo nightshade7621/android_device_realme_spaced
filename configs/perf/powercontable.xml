@@ -6,13 +6,6 @@
         <MaxValue>100</MaxValue>
         <MinValue>-100</MinValue>
     </CMD>
-    <CMD name="PERF_RES_SCHED_BOOST_VALUE_ROOT" id="0x01400000">
-        <Entry path="/dev/stune/schedtune.boost"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>100</MaxValue>
-        <MinValue>0</MinValue>
-        <DefaultValue>0</DefaultValue>
-    </CMD>
     <CMD name="PERF_RES_SCHED_BOOST_VALUE_TA" id="0x01400300">
         <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/perfserv_ta_boost"></Entry>
         <Compare>more</Compare>
@@ -81,12 +74,6 @@
         <MaxValue>100</MaxValue>
         <MinValue>0</MinValue>
         <DefaultValue>0</DefaultValue>
-    </CMD>
-    <CMD name="PERF_RES_SCHED_BOOST" id="0x01410000">
-        <Entry path="/sys/devices/system/cpu/sched/sched_boost"></Entry>
-        <Compare>more</Compare>
-        <MaxValue>2</MaxValue>
-        <MinValue>0</MinValue>
     </CMD>
     <CMD name="PERF_RES_SCHED_MIGRATE_COST" id="0x01414000">
         <Entry path="/proc/perfmgr/boost_ctrl/eas_ctrl/m_sched_migrate_cost_n"></Entry>
