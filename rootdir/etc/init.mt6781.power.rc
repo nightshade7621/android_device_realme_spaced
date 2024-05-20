@@ -1,3 +1,6 @@
+on fs
+    mount_all /vendor/etc/fstab.mt6781 --early
+    mount_all /vendor/etc/fstab.mt6781 --late
 
 on post-fs
 
